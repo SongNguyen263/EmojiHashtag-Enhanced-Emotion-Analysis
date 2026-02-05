@@ -1,0 +1,69 @@
+
+=== CNN Results - goemotions-cnn - 2025-08-21 16:09:53.288681 ===
+Test Loss: 0.0685
+Keras Accuracy (element-wise): 0.8467
+Raw Accuracy (sklearn, element-wise): 0.9876
+Micro-averaged F1 score: 0.8386
+Macro-averaged F1 score: 0.7407
+Weighted-averaged F1 score: 0.8331
+
+Classification Report:
+                precision    recall  f1-score   support
+
+    admiration     0.9181    0.8234    0.8682       504
+     amusement     0.9094    0.9129    0.9112       264
+         anger     0.9338    0.7121    0.8080       198
+     annoyance     0.9134    0.6594    0.7659       320
+      approval     0.9680    0.6895    0.8053       351
+        caring     0.8654    0.6667    0.7531       135
+     confusion     0.9802    0.6471    0.7795       153
+     curiosity     0.9679    0.6373    0.7686       284
+        desire     0.9667    0.6988    0.8112        83
+disappointment     0.9381    0.6026    0.7339       151
+   disapproval     0.9800    0.7341    0.8394       267
+       disgust     0.9318    0.6667    0.7773       123
+ embarrassment     0.9583    0.6216    0.7541        37
+    excitement     0.9846    0.6214    0.7619       103
+          fear     0.9714    0.8718    0.9189        78
+     gratitude     0.9710    0.9517    0.9613       352
+         grief     0.0000    0.0000    0.0000         6
+           joy     0.8740    0.6894    0.7708       161
+          love     0.9309    0.8487    0.8879       238
+   nervousness     0.0000    0.0000    0.0000        23
+      optimism     0.8904    0.6989    0.7831       186
+         pride     0.8000    0.2500    0.3810        16
+   realization     0.9588    0.6414    0.7686       145
+        relief     1.0000    0.6364    0.7778        11
+       remorse     0.9375    0.8036    0.8654        56
+       sadness     0.9000    0.7500    0.8182       156
+      surprise     0.9252    0.7021    0.7984       141
+       neutral     0.8722    0.8707    0.8715      1787
+
+     micro avg     0.9145    0.7744    0.8386      6329
+     macro avg     0.8660    0.6574    0.7407      6329
+  weighted avg     0.9143    0.7744    0.8331      6329
+   samples avg     0.8781    0.8525    0.8595      6329
+
+
+Example Predictions:
+Example 1: Feeling on top of the world today! 🎉😊 #BestDayEver #SoHappy
+Predicted Labels: ['admiration', 'joy']
+Top-3 Labels and Probabilities: [('joy', 0.9653), ('admiration', 0.7183), ('caring', 0.1595)]
+
+Example 2: Totally let down... 😢💔 #Disappointed #WhyThis
+Predicted Labels: ['disappointment', 'neutral']
+Top-3 Labels and Probabilities: [('neutral', 0.725), ('disappointment', 0.725), ('curiosity', 0.01428)]
+
+Example 3: Omg that’s incredible news! 😍✨ #Amazing #Grateful
+Predicted Labels: ['admiration', 'gratitude']
+Top-3 Labels and Probabilities: [('admiration', 1.0), ('gratitude', 0.693), ('surprise', 0.1987)]
+
+Example 4: Head full of thoughts rn 🤯🤔 #Confused #Overthinking
+Predicted Labels: ['neutral']
+Top-3 Labels and Probabilities: [('neutral', 0.9727), ('confusion', 0.0372), ('annoyance', 0.00454)]
+
+Example 5: Still can’t believe this happened. So pissed! 😡🔥 #Angry #Unbelievable
+Predicted Labels: ['anger', 'annoyance']
+Top-3 Labels and Probabilities: [('anger', 0.907), ('annoyance', 0.5933), ('sadness', 0.00769)]
+
+================================
